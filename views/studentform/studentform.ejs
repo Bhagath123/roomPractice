@@ -1,0 +1,33 @@
+<%- include('../intials/head.ejs') %>
+<link rel="stylesheet" href="/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+<div class="col-md-4 offset-4 mt-4">
+    <div class="card">
+        <div class="card-body">
+            <form action="postData" method="POST">
+            <div class="form-group">
+
+                <label for="name">name</label>
+                <input type="text"  id="name" class="form-control" name="name">
+            </div>
+            <div class="form-group">
+
+                <label for="phone">phonenumber</label>
+                <input type="text" id="phone" class="form-control" name="phonenumber">
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">email</label>
+                <input type="email" id="email" class="form-control" name="email">
+            </div>
+
+            <div class="form-group">
+            <button type="submit" class="btn-success form-control">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('../intials/end.ejs') %>
